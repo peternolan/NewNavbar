@@ -45,65 +45,65 @@
 
   <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link-box" href="#" data-ng-click="nav('PurchaseRequest',this)">
-          <div class="nav-link"> Purchase Request </div>
-          <img rel="icon" src="resources/img/outline-monetization_on-24px.svg">
+      <li class="nav-item">
+        <a class="nav-link" ng-mouseenter="openTab('PurchaseRequest')" ng-mouseleave="openTab('PurchaseRequest')" href="#" data-ng-click="nav('PurchaseRequest',this)">
+          <img class="icon" rel="icon" src="resources/img/outline-monetization_on-24px.svg">
+          <div class="nav-id align-self-center" id = "PurchaseRequest"> Purchase Request </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('PurchaseOrder',this)">
-          <div class="nav-link"> Purchase Order </div>
+        <a class="nav-link" ng-mouseenter="openTab('PurchaseOrder')" ng-mouseleave="openTab('PurchaseOrder')" href="#" data-ng-click="nav('PurchaseOrder',this)">
           <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg">
+          <div class="nav-id align-self-center" id ="PurchaseOrder"> Purchase Order </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('ProcurementVoucher',this)">
-          <div class="nav-link"> Procurement Voucher </div>
+        <a class="nav-link" ng-mouseenter="openTab('ProcurementVoucher')" ng-mouseleave="openTab('ProcurementVoucher')"  href="#" data-ng-click="nav('ProcurementVoucher',this)">
           <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg">
+          <div class="nav-id align-self-center" id = "ProcurementVoucher"> Procurement Voucher </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('Voucher',this)">
-          <div class="nav-link"> Voucher </div>
+        <a class="nav-link" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')"  href="#" data-ng-click="nav('Voucher',this)">
           <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg">
+          <div class="nav-id align-self-center" id = "Voucher"> Voucher </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('ReceivingReport',this)">
-          <div class="nav-link"> Receiving Report </div>
+        <a class="nav-link" ng-mouseenter="openTab('ReceivingReport')" ng-mouseleave="openTab('ReceivingReport')" href="#" data-ng-click="nav('ReceivingReport',this)">
           <img  rel="icon" alt="Report" src="resources/img/outline-report-24px.svg">
+          <div class="nav-id align-self-center" id = "ReceivingReport"> Receiving Report </div>
         </a>
         <!--ng-mouseover="turnOn()"-->
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('Deposit',this)">
-          <div class="nav-link"> Deposit </div>
+        <a class="nav-link" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" class="nav-link" href="#" data-ng-click="nav('Deposit',this)">
           <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg">
+          <div class="nav-id align-self-center" id = "Deposit"> Deposit </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('ESRTravel',this)">
-          <div class="nav-link"> ESR Travel </div>
+        <a class="nav-link" ng-mouseenter="openTab('ESRTravel')" ng-mouseleave="openTab('ESRTravel')" href="#" data-ng-click="nav('ESRTravel',this)">
           <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg">
+          <div class="nav-id align-self-center" id = 'ESRTravel'> ESR Travel </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('ESRNon')">
-          <div class="nav-link"> ESR Non-Travel</div>
+        <a class="nav-link" ng-mouseenter="openTab('ESRNon')" ng-mouseleave="openTab('ESRNon')" href="#" data-ng-click="nav('ESRNon')">
           <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg">
+          <div class="nav-id align-self-center" id = "ESRNon" > ESR Non-Travel</div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link-box" href="#" data-ng-click="nav('ExpenseAuthorization')">
-          <div class="nav-link"> Expense Authorization</div>
+        <a class="nav-link" ng-mouseenter="openTab('ExpenseAuthorization')" ng-mouseleave="openTab('ExpenseAuthorization')" href="#" data-ng-click="nav('ExpenseAuthorization')">
           <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg">
+          <div class="nav-id align-self-center" id="ExpenseAuthorization"> Expense Authorization</div>
         </a>
       </li>
     </ul>
     <div class="searchbar align-self-center">
       <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search">
-      <button class="btn btn-light search-button" type="button" id="button-search" onClick="toggleSearch()">
+      <button class="btn btn-light search-button" type="button" id="button-search" ng-click="toggleSearch()">
         <i class="material-icons">search</i>
       </button>
     </div>
@@ -118,37 +118,6 @@
         <h1 class="header-text" id="home">{{currentNavItem}} Hello, world</h1>
       </div>
     </div>
-    <!--
-    <div class="row">
-      <div class="col-sm hidden" id="purchaseReport">
-        <h1 class="header-text">Purchase Report</h1>
-      </div>
-      <div class="col-sm hidden" id="purchaseOrder">
-        <h1 class="header-text">Purchase Order</h1>
-      </div>
-      <div class="col-sm hidden" id="procurementVoucher">
-        <h1 class="header-text">Procurement Voucher</h1>
-      </div>
-      <div class="col-sm hidden" id="voucher">
-        <h1 class="header-text">Voucher</h1>
-      </div>
-      <div class="col-sm hidden" id="receivingReport">
-        <h1 class="header-text">Receiving Report</h1>
-      </div>
-      <div class="col-sm hidden" id="deposit">
-        <h1 class="header-text">Deposit</h1>
-      </div>
-      <div class="col-sm hidden" id="esrTravel">
-        <h1 class="header-text">ESR Travel</h1>
-      </div>
-      <div class="col-sm hidden" id="esrNonTravel">
-        <h1 class="header-text">ESR Non-Travel</h1>
-      </div>
-      <div class="col-sm hidden" id="expenseAuth">
-        <h1 class="header-text">Expense Authorization</h1>
-      </div>
-    </div>
-    -->
   </div>
 </div>
 
