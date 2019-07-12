@@ -18,6 +18,17 @@ body {
   background-color: #fff;
 }
 
+.nav-link {
+  border-radius: 10px;
+  transition: height 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  width: 145px;
+}
+
 .search-input {
   box-shadow: none;
   outline: none;

@@ -46,31 +46,59 @@
   <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#" data-ng-click="nav('PurchaseRequest',this)">Purchase Request <img rel="icon" src="resources/img/outline-monetization_on-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('PurchaseRequest',this)">
+          <div class="nav-link"> Purchase Request </div>
+          <img rel="icon" src="resources/img/outline-monetization_on-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('PurchaseOrder',this)">Purchase Order <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('PurchaseOrder',this)">
+          <div class="nav-link"> Purchase Order </div>
+          <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('ProcurementVoucher',this)">Procurement Voucher <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('ProcurementVoucher',this)">
+          <div class="nav-link"> Procurement Voucher </div>
+          <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('Voucher',this)">Voucher <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('Voucher',this)">
+          <div class="nav-link"> Voucher </div>
+          <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('ReceivingReport',this)">Receiving Report <img ng-mouseover="turnOn()" rel="icon" alt="Report" src="resources/img/outline-report-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('ReceivingReport',this)">
+          <div class="nav-link"> Receiving Report </div>
+          <img  rel="icon" alt="Report" src="resources/img/outline-report-24px.svg">
+        </a>
+        <!--ng-mouseover="turnOn()"-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('Deposit',this)">Deposit <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('Deposit',this)">
+          <div class="nav-link"> Deposit </div>
+          <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('ESRTravel',this)"> ESR Travel <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('ESRTravel',this)">
+          <div class="nav-link"> ESR Travel </div>
+          <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('ESRNon')"> ESR Non-Travel <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('ESRNon')">
+          <div class="nav-link"> ESR Non-Travel</div>
+          <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg">
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-ng-click="nav('ExpenseAuthorization')">Expense Authorization <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg"></a>
+        <a class="nav-link-box" href="#" data-ng-click="nav('ExpenseAuthorization')">
+          <div class="nav-link"> Expense Authorization</div>
+          <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg">
+        </a>
       </li>
     </ul>
     <div class="searchbar align-self-center">
@@ -136,5 +164,6 @@
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
 <script src="controllers.js"></script>
+<script src="service.js"></script>
 </body>
 </html>
