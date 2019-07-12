@@ -5,25 +5,22 @@
 angular.module('navApp.controllers', []).controller('navController', function ($scope) {
 
     var sections = [
-        "Purchase Report",
-        "Purchase Order",
-        "Procurement Voucher",
+        "PurchaseRequest",
+        "PurchaseOrder",
+        "ProcurementVoucher",
         "Voucher",
-        "Receiving Report",
+        "ReceivingReport",
         "Deposit",
-        "ESR Travel",
-        "ESR Non-Travel",
-        "Expense Authorization"
-    ]
+        "ESRTravel",
+        "ESRNon",
+        "ExpenseAuthorization"
+    ];
 
-    sections.forEach(function(item){
-        $(src).parent().addClass("active");
-        if (trgt === item){
-            $("#" + trgt).removeClass("hidden");
-        } else {
-            $("#" + item).addClass("hidden");
-        }
-    });
+    $scope.nav = function(page, src) {
+        $scope.currentNavItem = page;
+        console.log("Goto " + page);
+
+    }
 
 
 });

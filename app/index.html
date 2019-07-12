@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="navApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="navApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="navApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="navApp" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,34 +42,35 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+
   <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="nav('home',this)">Purchase Request <img rel="icon" src="resources/img/outline-monetization_on-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('PurchaseRequest',this)">Purchase Request <img rel="icon" src="resources/img/outline-monetization_on-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('solutions',this)">Purchase Order <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('PurchaseOrder',this)">Purchase Order <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('services',this)">Procurement Voucher <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('ProcurementVoucher',this)">Procurement Voucher <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('values',this)">Voucher <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('Voucher',this)">Voucher <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('story',this)">Receiving Report <img rel="icon" alt="Report" src="resources/img/outline-report-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('ReceivingReport',this)">Receiving Report <img ng-mouseover="turnOn()" rel="icon" alt="Report" src="resources/img/outline-report-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('credits',this)">Deposit <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('Deposit',this)">Deposit <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('credits',this)"> ESR Travel <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('ESRTravel',this)"> ESR Travel <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('credits',this)"> ESR Non-Travel <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('ESRNon')"> ESR Non-Travel <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onclick="nav('credits',this)">Expense Authorization <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg"></a>
+        <a class="nav-link" href="#" data-ng-click="nav('ExpenseAuthorization')">Expense Authorization <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg"></a>
       </li>
     </ul>
     <div class="searchbar align-self-center">
@@ -86,26 +87,40 @@
   <div class="container">
     <div class="row">
       <div class="col-sm">
-        <h1 class="header-text" id="home">Home. Hello, world</h1>
+        <h1 class="header-text" id="home">{{currentNavItem}} Hello, world</h1>
       </div>
     </div>
+    <!--
     <div class="row">
-      <div class="col-sm hidden" id="solutions">
-        <h1 class="header-text">Our Solutions</h1>
+      <div class="col-sm hidden" id="purchaseReport">
+        <h1 class="header-text">Purchase Report</h1>
       </div>
-      <div class="col-sm hidden" id="services">
-        <h1 class="header-text">Our Services</h1>
+      <div class="col-sm hidden" id="purchaseOrder">
+        <h1 class="header-text">Purchase Order</h1>
       </div>
-      <div class="col-sm hidden" id="values">
-        <h1 class="header-text">Our Values</h1>
+      <div class="col-sm hidden" id="procurementVoucher">
+        <h1 class="header-text">Procurement Voucher</h1>
       </div>
-      <div class="col-sm hidden" id="story">
-        <h1 class="header-text">Our Story</h1>
+      <div class="col-sm hidden" id="voucher">
+        <h1 class="header-text">Voucher</h1>
       </div>
-      <div class="col-sm hidden" id="credits">
-        <h1 class="header-text">Credits</h1>
+      <div class="col-sm hidden" id="receivingReport">
+        <h1 class="header-text">Receiving Report</h1>
+      </div>
+      <div class="col-sm hidden" id="deposit">
+        <h1 class="header-text">Deposit</h1>
+      </div>
+      <div class="col-sm hidden" id="esrTravel">
+        <h1 class="header-text">ESR Travel</h1>
+      </div>
+      <div class="col-sm hidden" id="esrNonTravel">
+        <h1 class="header-text">ESR Non-Travel</h1>
+      </div>
+      <div class="col-sm hidden" id="expenseAuth">
+        <h1 class="header-text">Expense Authorization</h1>
       </div>
     </div>
+    -->
   </div>
 </div>
 
@@ -120,8 +135,6 @@
 <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="core/version/version.js"></script>
-  <script src="core/version/version-directive.js"></script>
-  <script src="core/version/interpolate-filter.js"></script>
+<script src="controllers.js"></script>
 </body>
 </html>
