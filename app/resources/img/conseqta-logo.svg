@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="200px" viewBox="0 0 800 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="96.0808714%" y1="-29.3294722%" x2="33.4305237%" y2="93.7649381%" id="linearGradient-1">
+            <stop stop-color="#180045" offset="0%"></stop>
+            <stop stop-color="#783C7A" offset="51.2480955%"></stop>
+            <stop stop-color="#4A88CB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M114.536419,110.157885 L114.577224,110.08749 C120.364324,108.292359 124.56565,102.914711 124.56565,96.5596942 C124.56565,88.735913 118.197897,82.3934852 110.342875,82.3934852 C102.487854,82.3934852 96.1201005,88.735913 96.1201005,96.5596942 C96.1201005,97.0068773 96.1409033,97.449221 96.1815978,97.8858176 C96.4751771,98.3691315 96.6442308,98.9364581 96.6442308,99.5432692 C96.6442308,101.219197 95.3547108,102.593941 93.7137484,102.729424 L19,131.626852 L173.375,5 L113.329716,195 L112.227547,114.141064 L112.27681,114.056077 C112.209116,113.797121 112.173077,113.525365 112.173077,113.245192 C112.173077,111.767914 113.175018,110.524652 114.536419,110.157885 Z" id="Combined-Shape-Copy-6" stroke="#180045" fill="url(#linearGradient-1)"></path>
+        <text id="conseqta-copy-3" font-family="Lato-Light, Lato" font-size="150" font-weight="300" fill="#333333">
+            <tspan x="191.475" y="148">conseqta</tspan>
+        </text>
+    </g>
+</svg>

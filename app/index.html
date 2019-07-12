@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Title -->
+  <title>Conseqta Technology</title>
+
+
+  <!-- Meta Tag Info -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Conseqta Technology, LLC builds bleeding-edge tech solutions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <style>
+    .hidden {
+      display: none !important;
+    }
+  </style>
+
+
+</head>
+<body ng-app="navApp" ng-controller="navController">
+<!-- Header -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img class="logo-img" src="resources/img/conseqta-logo.svg" alt="logo"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" onclick="nav('home',this)">Purchase Request <img rel="icon" src="resources/img/outline-monetization_on-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('solutions',this)">Purchase Order <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('services',this)">Procurement Voucher <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('values',this)">Voucher <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('story',this)">Receiving Report <img rel="icon" alt="Report" src="resources/img/outline-report-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('credits',this)">Deposit <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('credits',this)"> ESR Travel <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('credits',this)"> ESR Non-Travel <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="nav('credits',this)">Expense Authorization <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg"></a>
+      </li>
+    </ul>
+    <div class="searchbar align-self-center">
+      <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search">
+      <button class="btn btn-light search-button" type="button" id="button-search" onClick="toggleSearch()">
+        <i class="material-icons">search</i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="header-text" id="home">Home. Hello, world</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm hidden" id="solutions">
+        <h1 class="header-text">Our Solutions</h1>
+      </div>
+      <div class="col-sm hidden" id="services">
+        <h1 class="header-text">Our Services</h1>
+      </div>
+      <div class="col-sm hidden" id="values">
+        <h1 class="header-text">Our Values</h1>
+      </div>
+      <div class="col-sm hidden" id="story">
+        <h1 class="header-text">Our Story</h1>
+      </div>
+      <div class="col-sm hidden" id="credits">
+        <h1 class="header-text">Credits</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+
+</footer>
+<!-- Import Page Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>
