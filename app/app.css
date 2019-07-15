@@ -1,6 +1,12 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.account {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+}
+
 .header-text {
   font-family: 'Lato','Roboto',sans-serif;
   font-weight: 300;
@@ -12,29 +18,35 @@ body {
 
 .navbar {
   border-bottom: 1px solid #ddd;
-  display: inline-block;
+  background-color: #222222;
 }
 
 .nav-item {
+  position: relative;
   float: left;
   border-left: black;
   border-left-style: solid;
   border-left-width: 1px;
+  white-space: nowrap;
+  display: inline-flex;
 }
 
 .nav-id {
   float: right;
   vertical-align: middle;
-  display: none;
+  display: inline;
   overflow: hidden;
-  transition: width 0.2s ease;
+  color: white;
+  max-width: 0;
+  transition: max-width .5s ease;
 }
 
 .nav-id-open {
   float: right;
   vertical-align: middle;
   display: inline-block;
-  transition: width 0.2s ease;
+  width: auto;
+  max-width: 500px;
 }
 
 .icon {
@@ -75,6 +87,7 @@ body {
 .material-icons {
   display: inline;
   vertical-align: middle;
+  color: white;
 }
 
 .search-input-open {
@@ -85,6 +98,7 @@ body {
   width: 250px;
   transition: width 0.2s ease;
 }
+
 .logo-img{
-  height:40px;
+  height: 40px;
 }

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Title -->
-  <title>Conseqta Technology</title>
+  <title>FMIS</title>
 
 
   <!-- Meta Tag Info -->
@@ -37,6 +37,9 @@
 <body ng-app="navApp" ng-controller="navController">
 <!-- Header -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <i class="material-icons">
+    menu
+  </i>
   <a class="navbar-brand" href="#"><img class="logo-img" src="resources/img/conseqta-logo.svg" alt="logo"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,56 +50,80 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('PurchaseRequest')" ng-mouseleave="openTab('PurchaseRequest')" href="#" data-ng-click="nav('PurchaseRequest',this)">
-          <img class="icon" rel="icon" src="resources/img/outline-monetization_on-24px.svg">
+          <i class="material-icons">
+            monetization_on
+          </i>
           <div class="nav-id align-self-center" id = "PurchaseRequest"> Purchase Request </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('PurchaseOrder')" ng-mouseleave="openTab('PurchaseOrder')" href="#" data-ng-click="nav('PurchaseOrder',this)">
-          <img rel="icon" src="resources/img/outline-shopping_cart-24px.svg">
+          <i class="material-icons">
+            shopping_cart
+          </i>
           <div class="nav-id align-self-center" id ="PurchaseOrder"> Purchase Order </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('ProcurementVoucher')" ng-mouseleave="openTab('ProcurementVoucher')"  href="#" data-ng-click="nav('ProcurementVoucher',this)">
-          <img rel="icon" alt="Cart" src="resources/img/outline-shopping_basket-24px.svg">
+          <i class="material-icons">
+            shopping_basket
+          </i>
           <div class="nav-id align-self-center" id = "ProcurementVoucher"> Procurement Voucher </div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')"  href="#" data-ng-click="nav('Voucher',this)">
-          <img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg">
+        <a class="nav-link" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')" href="#" data-ng-click="nav('Voucher',this)">
+          <!--<img rel="icon" alt="Offer" src="resources/img/outline-local_offer-24px.svg">-->
+          <i class="material-icons">
+            monetization_on
+          </i>
           <div class="nav-id align-self-center" id = "Voucher"> Voucher </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('ReceivingReport')" ng-mouseleave="openTab('ReceivingReport')" href="#" data-ng-click="nav('ReceivingReport',this)">
-          <img  rel="icon" alt="Report" src="resources/img/outline-report-24px.svg">
+          <!--<img  rel="icon" alt="Report" src="resources/img/outline-report-24px.svg">-->
+          <i class="material-icons">
+            report
+          </i>
           <div class="nav-id align-self-center" id = "ReceivingReport"> Receiving Report </div>
         </a>
         <!--ng-mouseover="turnOn()"-->
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" class="nav-link" href="#" data-ng-click="nav('Deposit',this)">
-          <img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg">
+          <!--<img rel="icon" alt="Card" src="resources/img/outline-credit_card-24px.svg">-->
+          <i class="material-icons">
+            credit_card
+          </i>
           <div class="nav-id align-self-center" id = "Deposit"> Deposit </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('ESRTravel')" ng-mouseleave="openTab('ESRTravel')" href="#" data-ng-click="nav('ESRTravel',this)">
-          <img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg">
+          <!--<img rel="icon" alt="Plane" src="resources/img/outline-airplanemode_active-24px.svg">-->
+          <i class="material-icons">
+            airplanemode_active
+          </i>
           <div class="nav-id align-self-center" id = 'ESRTravel'> ESR Travel </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('ESRNon')" ng-mouseleave="openTab('ESRNon')" href="#" data-ng-click="nav('ESRNon')">
-          <img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg">
+          <!--<img rel="icon" alt="XPlane" src="resources/img/outline-airplanemode_inactive-24px.svg">-->
+          <i class="material-icons">
+            airplanemode_inactive
+          </i>
           <div class="nav-id align-self-center" id = "ESRNon" > ESR Non-Travel</div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" ng-mouseenter="openTab('ExpenseAuthorization')" ng-mouseleave="openTab('ExpenseAuthorization')" href="#" data-ng-click="nav('ExpenseAuthorization')">
-          <img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg">
+          <!--<img rel="icon" alt="Thumb" src="resources/img/outline-thumb_up_alt-24px.svg">-->
+          <i class="material-icons">
+            thumb_up
+          </i>
           <div class="nav-id align-self-center" id="ExpenseAuthorization"> Expense Authorization</div>
         </a>
       </li>
@@ -107,6 +134,15 @@
         <i class="material-icons">search</i>
       </button>
     </div>
+
+    <div class="nav-item" style="position: relative; float: left">
+        <!--<img rel="icon" alt="Thumb" src="resources/img/baseline-person-24px.svg">-->
+      <i class="material-icons">
+        person
+      </i>
+        <div id="Account" >John N. Smith</div>
+    </div>
+
   </div>
 </nav>
 
