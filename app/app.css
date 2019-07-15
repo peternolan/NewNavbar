@@ -155,7 +155,7 @@ body {
 .material-icons {
   vertical-align: middle;
   color: white;
-  padding-top: 7px;
+  padding-top: 12px;
 
 }
 
@@ -171,6 +171,7 @@ body {
 
 .logo-img{
   height: 40px;
+  padding-left: 5px;
 }
 
 .name {
@@ -179,4 +180,30 @@ body {
   padding-left: 5px;
   font-size: 14px;
 
+}
+
+.searchBar{
+  width: 125px;
+  float: left;
+  border-radius: 25px;
+  background-color:black;
+}
+
+.userName {
+  float: left;
+  height: 100%;
+  width: auto;
+  padding-left: 3px;
+
+}
+
+.nameSpace {
+  border-left: #3E444A;
+  border-left-style: solid;
+  border-left-width: 1px;
+  white-space: nowrap;
+  height: 100%;
+  float: left;
+  display: inline-flex;
+  border-bottom: 3px solid #222222;
 }
