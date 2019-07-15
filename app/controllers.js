@@ -23,8 +23,6 @@ angular.module('navApp.controllers', []).controller('navController', function ($
     };
 
     $scope.openTab = function(page) {
-        console.log("HOVER");
-        console.log(page);
         $("#"+page).toggleClass("nav-link-open");
         $("#"+page+'ID').toggleClass("nav-id-open");
     };
