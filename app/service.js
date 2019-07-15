@@ -11,7 +11,4 @@ angular.module('navApp.service', []).factory('barService', function () {
         console.log("Goto " + page);
         return currentNavItem;
     }
-
-
-
-})
+});

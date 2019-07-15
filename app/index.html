@@ -39,7 +39,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="padding-bottom: 0; padding-left: 0; padding-top: 0">
 
   <div class = "dropDown">
-    <i class="material-icons">
+    <i class="material-icons md-36">
       menu
     </i>
   </div>
@@ -52,89 +52,73 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" >
         <a class="nav-link" id = "PurchaseRequest" ng-mouseenter="openTab('PurchaseRequest')" ng-mouseleave="openTab('PurchaseRequest')" href="#" data-ng-click="nav('PurchaseRequest',this)">
-          <i class="material-icons">
-            monetization_on
-          </i>
+          <img class = "imgs" src = "resources/img/Purchase%20Request.svg" alt = "Icon">
           <div class="nav-id align-self-center" id = "PurchaseRequestID"> Purchase Request </div>
         </a>
       </li>
       <li class="nav-item" >
         <a class="nav-link" id ="PurchaseOrder" ng-mouseenter="openTab('PurchaseOrder')" ng-mouseleave="openTab('PurchaseOrder')" href="#" data-ng-click="nav('PurchaseOrder',this)">
-          <i class="material-icons">
-            shopping_cart
-          </i>
+          <img class = "imgs" src = "resources/img/Purchase%20Order.svg" alt = "Icon">
           <div class="nav-id align-self-center" id ="PurchaseOrderID"> Purchase Order </div>
         </a>
       </li>
       <li class="nav-item" >
         <a class="nav-link" id = "ProcurementVoucher" ng-mouseenter="openTab('ProcurementVoucher')" ng-mouseleave="openTab('ProcurementVoucher')"  href="#" data-ng-click="nav('ProcurementVoucher',this)">
-          <i class="material-icons">
-            shopping_basket
-          </i>
+          <img class = "imgs" src = "resources/img/Procurement%20Voucher.svg" alt = "Icon">
           <div class="nav-id align-self-center" id = "ProcurementVoucherID"> Procurement Voucher </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id = "Voucher" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')" href="#" data-ng-click="nav('Voucher',this)">
-          <i class="material-icons">
-            monetization_on
-          </i>
+          <img class = "imgs" src = "resources/img/Direct%20Voucher.svg" alt = "Icon">
           <div class="nav-id align-self-center" id = "VoucherID"> Voucher </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id = "ReceivingReport" ng-mouseenter="openTab('ReceivingReport')" ng-mouseleave="openTab('ReceivingReport')" href="#" data-ng-click="nav('ReceivingReport',this)">
-          <i class="material-icons">
-            report
-          </i>
+          <img class = "imgs" src = "resources/img/Receiving%20Report.svg" alt = "Icon">
           <div class="nav-id align-self-center" id = "ReceivingReportID"> Receiving Report </div>
         </a>
       </li>
-      <li class="nav-item" id = "Deposit">
-        <a class="nav-link" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" href="#" data-ng-click="nav('Deposit',this)">
-          <i class="material-icons">
-            credit_card
-          </i>
+      <li class="nav-item">
+        <a class="nav-link" id = "Deposit" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" href="#" data-ng-click="nav('Deposit',this)">
+          <img class = "imgs" src = "resources/img/Deposit.svg" alt = "Icon">
           <div class="nav-id align-self-center" id = "DepositID"> Deposit </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id = "ESRTravel" ng-mouseenter="openTab('ESRTravel')" ng-mouseleave="openTab('ESRTravel')" href="#" data-ng-click="nav('ESRTravel',this)">
-          <i class="material-icons">
-            airplanemode_active
-          </i>
+          <img class = "imgs" src="resources/img/Travel%20ESR.svg">
           <div class="nav-id align-self-center" id = 'ESRTravelID'> ESR Travel </div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id = "ESRNon" ng-mouseenter="openTab('ESRNon')" ng-mouseleave="openTab('ESRNon')" href="#" data-ng-click="nav('ESRNon')">
-          <i class="material-icons">
-            airplanemode_inactive
-          </i>
+          <img class = "imgs" src="resources/img/Nontravel%20ESR.svg">
           <div class="nav-id align-self-center" id = "ESRNonID" > ESR Non-Travel</div>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="ExpenseAuthorization" ng-mouseenter="openTab('ExpenseAuthorization')" ng-mouseleave="openTab('ExpenseAuthorization')" href="#" data-ng-click="nav('ExpenseAuthorization')">
-          <i class="material-icons">
-            thumb_up
-          </i>
+          <img class = "imgs" src="resources/img/Expense%20Authorization.svg">
           <div class="nav-id align-self-center" id="ExpenseAuthorizationID"> Expense Authorization</div>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="material-icons">search</i>
+        </a>
+      </li>
     </ul>
-    <div class="searchbar align-self-center">
-      <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search">
-      <button class="btn btn-dark search-button" type="button" id="button-search" ng-click="toggleSearch()">
-        <i class="material-icons">search</i>
-      </button>
-    </div>
 
-    <div class="nav-item" style="position: relative; float: left">
-      <i class="material-icons">
-        person
-      </i>
-        <div id="Account" class="name">John M. Smith</div>
+
+    <div class="nav-item">
+      <a class="nav-link">
+        <i class="material-icons">
+          person
+        </i>
+      </a>
+      <div id="Account" class="name"> John M. Smith</div>
     </div>
   </div>
 </nav>
