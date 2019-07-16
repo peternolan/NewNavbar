@@ -8,7 +8,6 @@ angular.module('navApp.service', []).factory('barService', function () {
 
    function goTo (page) {
         currentNavItem = page;
-        console.log("Goto " + page);
         return currentNavItem;
     }
 });

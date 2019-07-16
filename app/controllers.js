@@ -19,7 +19,12 @@ angular.module('navApp.controllers', []).controller('navController', function ($
    ];
 
     $scope.toggleSearch = function(){
+        document.getElementById("search").readOnly = !document.getElementById("search").readOnly;
+        console.log(document.getElementById("search").readOnly);
         $("#search").toggleClass("search-input-open").focus();
+
+
+
     };
 
     $scope.openTab = function(page) {
