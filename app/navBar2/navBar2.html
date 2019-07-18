@@ -1,0 +1,126 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="padding-bottom: 0; padding-left: 0; padding-top: 0">
+    <div class = "dropDown">
+        <i class="material-icons md-36">
+            menu
+        </i>
+    </div>
+    <a class="navbar-brand"><img class="logo-img" src="resources/img/senate-eagle-white.png" alt="logo"/><span style="color: white; padding-left: 2%">FMIS</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item-drop dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown">
+                    Administration
+                </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id = "Budget" data-ng-click="nav('Budget',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/budget-icon.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "BudgetID"> Budget </div>
+                    </a>
+                    <a class="dropdown-item" id = "PayOffReports" data-ng-click="nav('PayOffReports',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/money-check-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "PayOffReportsID"> Payroll Reports  </div>
+                    </a>
+                    <a class="dropdown-item" id = "Contract" data-ng-click="nav('Contract',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/file-signature-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ContractID"> Contracts Management </div>
+                    </a>
+                    <a class="dropdown-item" id = "Documents" data-ng-click="nav('Documents',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/file-alt-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "DocumentsID"> Documents Management </div>
+                    </a>
+                    <a class="dropdown-item" id = "User" data-ng-click="nav('User',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/user-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "UserID"> User Management  </div>
+                    </a>
+                    <a class="dropdown-item" id = "Workflow" data-ng-click="nav('Workflow',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/tasks-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "WorkflowID"> Workflow Management </div>
+                    </a>
+                    <a class="dropdown-item" id = "Monitor" data-ng-click="nav('Monitor',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/credit-card-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "MonitorID"> EI Monitor </div>
+                    </a>
+                    <a class="dropdown-item" id = "Posting" data-ng-click="nav('Posting',this)">
+                        <img class = "imgs-drop" src = "../resources/imgDrop/star-solid.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "PostingID"> Posting </div>
+                    </a>
+                </div>
+            </li>
+            <li class = "nav-item-drop">
+                <a class="nav-link-drop">
+                    <div class="searchbar align-self-center">
+                        <div class="nav-id-down align-self-center" id = "Analytics"> Analytics </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item-drop dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown">
+                    Administration
+                </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id = "PurchaseRequest" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Purchase%20Request.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "PurchaseRequestID"> Purchase Request </div>
+                    </a>
+                    <a class="dropdown-item" id = "PurchaseOrder" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Purchase%20Order.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "PurchaseOrderID"> Purchase Order </div>
+                    </a>
+                    <a class="dropdown-item" id = "ProcurementVoucher" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Procurement%20Voucher.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ProcurementVoucherID"> Procurement Voucher</div>
+                    </a>
+                    <a class="dropdown-item" id = "Voucher" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Direct%20Voucher.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "VoucherID"> Voucher </div>
+                    </a>
+                    <a class="dropdown-item" id = "ReceivingReport" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Receiving%20report.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ReceivingReportID"> Receiving Report </div>
+                    </a>
+                    <a class="dropdown-item" id = "Deposit" data-ng-click="nav('PurchaseRequest',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Deposit.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "DepositID"> Deposit </div>
+                    </a>
+                    <a class="dropdown-item" id = "ESRTravel" data-ng-click="nav('Monitor',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Travel%20ESR.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ESRTravelID"> ESR Travel </div>
+                    </a>
+                    <a class="dropdown-item" id = "ESRNon" data-ng-click="nav('Posting',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Nontravel%20ESR.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ESRNonID"> ESR Non-Travel </div>
+                    </a>
+                    <a class="dropdown-item" id = "ExpenseAuthorization" data-ng-click="nav('Posting',this)">
+                        <img class = "imgs-drop" src = "../resources/img/Expense%20Authorization.svg" alt = "Icon">
+                        <div class="nav-id-drop align-self-center" id = "ExpenseAuthorizationID"> Expense Authorization </div>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <div class="searchbar align-self-center">
+                        <button class="search-button" type="button" id="button-search" ng-click="toggleSearch()">
+                            <i class="material-icons">search</i>
+                        </button>
+                        <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search" readonly>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="userName">
+            <a class="nameSpace">
+                <i class="material-icons" style="margin-left: 5%">
+                    person
+                </i>
+                <div id="Account" class="name"> John M. Smith</div>
+                <i class="material-icons">
+                    expand_more
+                </i>
+            </a>
+        </div>
+    </div>
+</nav>

@@ -18,14 +18,13 @@
 
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <!-- Page Styles -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
   <style>
     .hidden {
       display: none !important;
@@ -34,99 +33,9 @@
 
 
 </head>
-<body ng-app="navApp" ng-controller="navController">
+<body ng-app="navApp">
 <!-- Header -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="padding-bottom: 0; padding-left: 0; padding-top: 0">
-
-  <div class = "dropDown">
-    <i class="material-icons md-36">
-      menu
-    </i>
-  </div>
-  <a class="navbar-brand" href="#"><img class="logo-img" src="resources/img/senate-eagle-white.png" alt="logo"/><span style="color: white; padding-left: 2%">FMIS</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" id = "PurchaseRequest" ng-mouseenter="openTab('PurchaseRequest')" ng-mouseleave="openTab('PurchaseRequest')" href="#" data-ng-click="nav('PurchaseRequest',this)">
-          <img class = "imgs" src = "resources/img/Purchase%20Request.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id = "PurchaseRequestID"> Purchase Request </div>
-        </a>
-      </li>
-      <li class="nav-item" >
-        <a class="nav-link" id ="PurchaseOrder" ng-mouseenter="openTab('PurchaseOrder')" ng-mouseleave="openTab('PurchaseOrder')" href="#" data-ng-click="nav('PurchaseOrder',this)">
-          <img class = "imgs" src = "resources/img/Purchase%20Order.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id ="PurchaseOrderID"> Purchase Order </div>
-        </a>
-      </li>
-      <li class="nav-item" >
-        <a class="nav-link" id = "ProcurementVoucher" ng-mouseenter="openTab('ProcurementVoucher')" ng-mouseleave="openTab('ProcurementVoucher')"  href="#" data-ng-click="nav('ProcurementVoucher',this)">
-          <img class = "imgs" src = "resources/img/Procurement%20Voucher.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id = "ProcurementVoucherID"> Procurement Voucher </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id = "Voucher" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')" href="#" data-ng-click="nav('Voucher',this)">
-          <img class = "imgs" src = "resources/img/Direct%20Voucher.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id = "VoucherID"> Voucher </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id = "ReceivingReport" ng-mouseenter="openTab('ReceivingReport')" ng-mouseleave="openTab('ReceivingReport')" href="#" data-ng-click="nav('ReceivingReport',this)">
-          <img class = "imgs" src = "resources/img/Receiving%20Report.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id = "ReceivingReportID"> Receiving Report </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id = "Deposit" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" href="#" data-ng-click="nav('Deposit',this)">
-          <img class = "imgs" src = "resources/img/Deposit.svg" alt = "Icon">
-          <div class="nav-id align-self-center" id = "DepositID"> Deposit </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id = "ESRTravel" ng-mouseenter="openTab('ESRTravel')" ng-mouseleave="openTab('ESRTravel')" href="#" data-ng-click="nav('ESRTravel',this)">
-          <img class = "imgs" src="resources/img/Travel%20ESR.svg">
-          <div class="nav-id align-self-center" id = 'ESRTravelID'> ESR Travel </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id = "ESRNon" ng-mouseenter="openTab('ESRNon')" ng-mouseleave="openTab('ESRNon')" href="#" data-ng-click="nav('ESRNon')">
-          <img class = "imgs" src="resources/img/Nontravel%20ESR.svg">
-          <div class="nav-id align-self-center" id = "ESRNonID" > ESR Non-Travel</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="ExpenseAuthorization" ng-mouseenter="openTab('ExpenseAuthorization')" ng-mouseleave="openTab('ExpenseAuthorization')" href="#" data-ng-click="nav('ExpenseAuthorization')">
-          <img class = "imgs" src="resources/img/Expense%20Authorization.svg">
-          <div class="nav-id align-self-center" id="ExpenseAuthorizationID"> Expense Authorization</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">
-          <div class="searchbar align-self-center">
-            <button class="search-button" type="button" id="button-search" ng-click="toggleSearch()">
-              <i class="material-icons">search</i>
-            </button>
-            <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search" readonly>
-          </div>
-        </a>
-      </li>
-    </ul>
-    <div class="userName">
-      <a class="nameSpace">
-        <i class="material-icons" style="margin-left: 5%">
-          person
-        </i>
-        <div id="Account" class="name"> John M. Smith</div>
-        <i class="material-icons">
-          expand_more
-        </i>
-      </a>
-    </div>
-  </div>
-</nav>
+<ng-view></ng-view>
 
 <!-- Main Content -->
 <div class="main">
@@ -134,6 +43,8 @@
     <div class="row">
       <div class="col-sm">
         <h1 class="header-text" id="home">{{currentNavItem}} Hello, world</h1>
+        <li><a href="#!/navBar1">Navigation Bar A</a></li>
+        <li><a href="#!/navBar2">Navigation Bar B</a></li>
       </div>
     </div>
   </div>
@@ -145,12 +56,14 @@
 </footer>
 <!-- Import Page Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-<script src="controllers.js"></script>
-<script src="service.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="navBar1/navBar1.js"></script>
+<script src="navBar1/services1.js"></script>
+<script src="navBar2/navBar2.js"></script>
+<script src="navBar2/services2.js"></script>
 </body>
 </html>

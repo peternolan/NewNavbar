@@ -1,0 +1,90 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="padding-bottom: 0; padding-left: 0; padding-top: 0">
+    <div class = "dropDown">
+        <i class="material-icons md-36">
+            menu
+        </i>
+    </div>
+    <a class="navbar-brand"><img class="logo-img" src="resources/img/senate-eagle-white.png" alt="logo"/><span style="color: white; padding-left: 2%">FMIS</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" id = "PurchaseRequest" ng-mouseenter="openTab('PurchaseRequest')" ng-mouseleave="openTab('PurchaseRequest')" data-ng-click="nav('PurchaseRequest',this)">
+                    <img class = "imgs" src = "../resources/img/Purchase%20Request.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id = "PurchaseRequestID"> Purchase Request </div>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" id ="PurchaseOrder" ng-mouseenter="openTab('PurchaseOrder')" ng-mouseleave="openTab('PurchaseOrder')" data-ng-click="nav('PurchaseOrder',this)">
+                    <img class = "imgs" src = "../resources/img/Purchase%20Order.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id ="PurchaseOrderID"> Purchase Order </div>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" id = "ProcurementVoucher" ng-mouseenter="openTab('ProcurementVoucher')" ng-mouseleave="openTab('ProcurementVoucher')"  data-ng-click="nav('ProcurementVoucher',this)">
+                    <img class = "imgs" src = "../resources/img/Procurement%20Voucher.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id = "ProcurementVoucherID"> Procurement Voucher </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id = "Voucher" ng-mouseenter="openTab('Voucher')" ng-mouseleave="openTab('Voucher')" data-ng-click="nav('Voucher',this)">
+                    <img class = "imgs" src = "../resources/img/Direct%20Voucher.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id = "VoucherID"> Voucher </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id = "ReceivingReport" ng-mouseenter="openTab('ReceivingReport')" ng-mouseleave="openTab('ReceivingReport')" data-ng-click="nav('ReceivingReport',this)">
+                    <img class = "imgs" src = "../resources/img/Receiving%20Report.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id = "ReceivingReportID"> Receiving Report </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id = "Deposit" ng-mouseenter="openTab('Deposit')" ng-mouseleave="openTab('Deposit')" data-ng-click="nav('Deposit',this)">
+                    <img class = "imgs" src = "../resources/img/Deposit.svg" alt = "Icon">
+                    <div class="nav-id align-self-center" id = "DepositID"> Deposit </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id = "ESRTravel" ng-mouseenter="openTab('ESRTravel')" ng-mouseleave="openTab('ESRTravel')" data-ng-click="nav('ESRTravel',this)">
+                    <img class = "imgs" src="../resources/img/Travel%20ESR.svg">
+                    <div class="nav-id align-self-center" id = 'ESRTravelID'> ESR Travel </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id = "ESRNon" ng-mouseenter="openTab('ESRNon')" ng-mouseleave="openTab('ESRNon')" data-ng-click="nav('ESRNon')">
+                    <img class = "imgs" src="../resources/img/Nontravel%20ESR.svg">
+                    <div class="nav-id align-self-center" id = "ESRNonID" > ESR Non-Travel</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ExpenseAuthorization" ng-mouseenter="openTab('ExpenseAuthorization')" ng-mouseleave="openTab('ExpenseAuthorization')" data-ng-click="nav('ExpenseAuthorization')">
+                    <img class = "imgs" src="../resources/img/Expense%20Authorization.svg">
+                    <div class="nav-id align-self-center" id="ExpenseAuthorizationID"> Expense Authorization</div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <div class="searchbar align-self-center">
+                        <button class="search-button" type="button" id="button-search" ng-click="toggleSearch()">
+                            <i class="material-icons">search</i>
+                        </button>
+                        <input type="text" id="search" class="search-input align-self-center" placeholder="Search..." aria-label="Search" aria-describedby="button-search" readonly>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="userName">
+            <a class="nameSpace">
+                <i class="material-icons" style="margin-left: 5%">
+                    person
+                </i>
+                <div id="Account" class="name"> John M. Smith</div>
+                <i class="material-icons">
+                    expand_more
+                </i>
+            </a>
+        </div>
+    </div>
+</nav>

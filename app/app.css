@@ -43,6 +43,7 @@ body {
   float: left;
   display: inline-flex;
   height: 100%;
+  color: white;
   width: auto;
 }
 
@@ -211,4 +212,77 @@ body {
   float: left;
   display: inline-flex;
   border-bottom: 3px solid #222222;
+}
+
+
+.dropdown-menu {
+  background-color: #505255;
+  width: 215px;
+  border-radius: 0;
+  top: 95%;
+  border: none;
+
+}
+
+.dropdown-item {
+  padding: 0;
+  display: flex;
+
+}
+
+.nav-item-drop {
+  float: left;
+  display: inline-flex;
+  height: 100%;
+  color: white;
+  width: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav-id-drop {
+  float: left;
+  vertical-align: middle;
+  display: inline;
+  color: white;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.dropdown-item:hover{
+  background-color: #65BDBE;
+}
+
+.imgs-drop {
+  height: 16px;
+  width: 20px;
+  display: inline-flex;
+  vertical-align: middle;
+  color: white;
+  horiz-align: center;
+  margin: 15px 15px;
+}
+
+
+.nav-link-drop {
+  float: right;
+  vertical-align: middle;
+  display: inline;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 0;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.dropdown-toggle {
+  color: white;
+  padding-top: 15%;
+  font-size: 14px;
+}
+
+.dropdown-toggle::after
+{
+  color: white;
 }
