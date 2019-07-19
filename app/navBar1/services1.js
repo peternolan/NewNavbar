@@ -10,6 +10,7 @@
         };
 
         function goTo (page) {
+            console.log("GOTO");
             currentNavItem = page;
             return currentNavItem;
         }
