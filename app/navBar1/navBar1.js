@@ -4,23 +4,23 @@
 // Declare app level module which depends on views, and core components
 angular.module('navApp.navBar1', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/navBar1', {
-        templateUrl: 'navBar1/navBar1.html',
-        controller: 'navController1'
-    });
-}]).controller('navController1', function ($scope, bar1service) {
-   $scope.currentNavItem = "";
-   var sections = [
-       "PurchaseRequest",
-       "PurchaseOrder",
-       "ProcurementVoucher",
-       "Voucher",
-       "ReceivingReport",
-       "Deposit",
-       "ESRTravel",
-       "ESRNon",
-       "ExpenseAuthorization"
-   ];
+        $routeProvider.when('/navBar1', {
+            templateUrl: 'navBar1/navBar1.html',
+            controller: 'navController1'
+        });
+    }]).controller('navController1', function ($scope, bar1service) {
+    $scope.currentNavItem = "";
+    var sections = [
+        "PurchaseRequest",
+        "PurchaseOrder",
+        "ProcurementVoucher",
+        "Voucher",
+        "ReceivingReport",
+        "Deposit",
+        "ESRTravel",
+        "ESRNon",
+        "ExpenseAuthorization"
+    ];
     $scope.toggleSearch = function(){
 
         console.log("OPEN SEARCH");
@@ -37,5 +37,5 @@ angular.module('navApp.navBar1', ['ngRoute'])
     $scope.nav = function (page) {
         console.log(page);
         $scope.currentNavItem = bar1service.goTo(page);
-   }
+    }
 });

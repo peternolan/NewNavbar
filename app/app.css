@@ -9,7 +9,6 @@ body {
 
 .collapse {
   padding-right: 6%;
-  overflow: scroll;
 }
 
 .w-100 {
@@ -75,6 +74,11 @@ body {
   height: 100%;
   display: inline-flex;
   border-bottom: 3px solid #3092FB;
+}
+
+.dropDown {
+  background-color: #3092FB;
+  padding: 8px;
 }
 
 .nav-id {
@@ -209,10 +213,6 @@ body {
 }
 
 
-.dropDown {
-  background-color: #3092FB;
-  padding: 8px;
-}
 
 .dropdown-menu {
   background-color: #505255;
@@ -277,7 +277,7 @@ body {
 
 .dropdown-toggle {
   color: white;
-  padding-top: 15%;
+  padding-top: 15px;
   font-size: 14px;
 }
 
