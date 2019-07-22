@@ -35,7 +35,7 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  height: 6%;
+  height: 45px;
   width: 100%;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .dropDown {
   background-color: #3092FB;
-  padding: 8px;
+  padding: 4px;
 }
 
 .nav-id {

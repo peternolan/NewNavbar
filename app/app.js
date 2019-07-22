@@ -1,7 +1,7 @@
 'use strict';
 
 (function() {
-// Declare app level module which depends on views, and core components
+    // Declare app level module which depends on views, and core components
     angular.module('navApp', [
         'ngRoute',
         'navApp.navBar1',

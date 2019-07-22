@@ -11,6 +11,7 @@
 
         function goTo (page) {
             currentNavItem = page;
+
             return currentNavItem;
         }
     });

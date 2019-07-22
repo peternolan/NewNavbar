@@ -10,15 +10,11 @@ angular.module('navApp.navBar2', ['ngRoute'])
         });
     }]).controller('navController2', function ($scope, bar2service) {
         $scope.toggleSearch = function(){
-            console.log("OPEN SEARCH");
             document.getElementById("search").readOnly = !document.getElementById("search").readOnly;
             console.log(document.getElementById("search").readOnly);
             $("#search").toggleClass("search-input-open").focus();
         };
-        $scope.nav = function (page) {
-            console.log(page);
-            $scope.currentNavItem = bar2service.goTo(page);
-        }
+
 
 
     });

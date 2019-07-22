@@ -1,10 +1,12 @@
+'use strict';
+
 // Declare app level module which depends on views, and core components
-angular.module('navApp.body', []).config(['$routeProvider'], function ($routeProvider) {
-    $routeProvider.when('/body', {
+angular.module('navApp', []).component('page', {
 
-    });
-}).controller('appController', function ($scope, bar1service) {
+    templateUrl: '../page/page.html',
+    bindings: {
+        currentNavItem: '='
+    }
 
-    $scope.currentNavItem = bar1service.currentNavItem;
 
 });
