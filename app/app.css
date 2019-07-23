@@ -285,3 +285,75 @@ body {
 {
   color: white;
 }
+
+.modal-title {
+  margin-left: 25px;
+}
+
+ol {
+  padding-left: 40px;
+  font-size: 15px;
+
+}
+
+.btn.btn-primary {
+  border: none;
+  background-color: #26a5a6;
+  padding: 15px 30px;
+  font-size: 12px;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-header .close {
+  padding: 3px 5px 8px;
+  margin-right: 18px;
+  margin-top: 2px;
+  width: auto;
+  height: auto;
+  font-weight: 100;
+
+}
+
+button.close {
+
+  border: 1px solid black;
+  border-radius: 50px;
+
+}
+
+.close {
+  line-height: .5;
+
+}
+
+input[type=checkbox], input[type=radio] {
+  margin-right: 15px;
+
+}
+
+label {
+
+  margin-right: 45px;
+
+}
+
+.radio-inline {
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.modal-content {
+  width: 600px;
+  margin: auto;
+}
+
+
+.modal-body {
+  padding-top: 15px;
+}
