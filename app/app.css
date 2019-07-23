@@ -299,7 +299,7 @@ ol {
 .btn.btn-primary {
   border: none;
   background-color: #26a5a6;
-  padding: 15px 30px;
+  padding: 12px 35px;
   font-size: 12px;
 }
 
@@ -315,6 +315,10 @@ ol {
   height: auto;
   font-weight: 100;
 
+}
+
+.modal-header {
+  margin-top: 15px;
 }
 
 button.close {
