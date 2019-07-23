@@ -33,9 +33,9 @@
 
 
 </head>
-<body ng-app="navApp">
+<body ng-app="navApp" ng-controller="navController1">
 <!-- Header -->
-<ng-view ng-controller="navController1 as ctrl"></ng-view>
+<div ng-view></div>
 
 <!-- Main Content -->
 <div class="main">
@@ -49,14 +49,17 @@
         <div>
           <a href="#!/navBar2">Navigation Bar B</a>
         </div>
-        <div>
-          <modal></modal>
-        </div>
+        <modal></modal>
       </div>
     </div>
   </div>
 </div>
-<!--<page current-nav-item="ctrl.currentNavItem"></page>-->
+
+<!--
+<div>
+  <page current-nav-item="ctrl.currentNavItem"></page>
+</div>
+-->
 
 <!-- Footer -->
 <footer class="footer">
@@ -70,10 +73,9 @@
 <script src="lib/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
 <script src="navBar1/navBar1.js"></script>
-<script src="navBar1/services1.js"></script>
+<script src="services.js"></script>
 <script src="navBar2/navBar2.js"></script>
-<script src="navBar2/services2.js"></script>
 <script src="modal/modal.js"></script>
-<script src="page/page.js"></script>
+<!--<script src="page/page.js"></script>-->
 </body>
 </html>

@@ -5,9 +5,8 @@
     angular.module('navApp', [
         'ngRoute',
         'navApp.navBar1',
-        'navApp.services1',
         'navApp.navBar2',
-        'navApp.services2'
+        'navApp.services'
 
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');

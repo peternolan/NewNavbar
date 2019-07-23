@@ -8,7 +8,7 @@ angular.module('navApp.navBar2', ['ngRoute'])
             templateUrl: 'navBar2/navBar2.html',
             controller: 'navController2'
         });
-    }]).controller('navController2', function ($scope, bar2service) {
+    }]).controller('navController2', function ($scope, barService) {
         $scope.toggleSearch = function(){
             document.getElementById("search").readOnly = !document.getElementById("search").readOnly;
             console.log(document.getElementById("search").readOnly);
