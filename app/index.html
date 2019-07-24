@@ -33,7 +33,7 @@
 
 
 </head>
-<body ng-app="navApp" ng-controller="navController1">
+<body ng-app="navApp">
 <!-- Header -->
 <div ng-view></div>
 
@@ -49,8 +49,10 @@
         <div>
           <a href="#!/navBar2">Navigation Bar B</a>
         </div>
-        <modal></modal>
-      </div>
+        <travel-type-modal
+        show-one-way = "true"
+        on-apply-filter="vm.onApplyFilter(filterData)"
+        />
     </div>
   </div>
 </div>
@@ -75,7 +77,7 @@
 <script src="navBar1/navBar1.js"></script>
 <script src="services.js"></script>
 <script src="navBar2/navBar2.js"></script>
-<script src="modal/modal.js"></script>
+<script src="modal/travel-type-modal.component.js"></script>
 <!--<script src="page/page.js"></script>-->
 </body>
 </html>
