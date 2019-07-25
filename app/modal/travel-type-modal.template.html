@@ -98,35 +98,39 @@
                 <form>
                     <div class="travel-type-form-group">
                         <div class = "row">
-                            <div class= "col-md-offset-1">
+                            <div class= "col-md-1">
                                 1.
                             </div>
                             <div class= "col-md-11"> 
                                 Did you have meals or lodging expenses?
                             </div>
                         </div>
-                        <label class="travel-type-radio-inline">
-                            <input
-                                type="radio"
-                                class="yes"
-                                name="optradio1"
-                                ng-click="vm.question1 = true ; vm.determineTrip()"
-                                ng-checked="vm.question1 === true">
-                                Yes
-                        </label>
-                        <label class="travel-type-radio-inline">
-                            <input
-                                type="radio"
-                                class="no"
-                                name="optradio1"
-                                ng-click="vm.setQuestion1(false)"
-                                ng-checked="vm.question1 === false">
-                                No                        
-                        </label>
+                        <div class = "row">
+                            <div class= "col-md-11 offset-md-1">
+                                <label class="travel-type-radio-inline">
+                                    <input
+                                        type="radio"
+                                        class="yes"
+                                        name="optradio1"
+                                        ng-click="vm.question1 = true ; vm.determineTrip()"
+                                        ng-checked="vm.question1 === true">
+                                        Yes
+                                </label>
+                                <label class="travel-type-radio-inline">
+                                    <input
+                                        type="radio"
+                                        class="no"
+                                        name="optradio1"
+                                        ng-click="vm.setQuestion1(false)"
+                                        ng-checked="vm.question1 === false">
+                                        No                        
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div ng-show="vm.showOneWay" class="travel-type-form-group" disabled>
                        <div ng-if="vm.showOneWay" class="row">
-                            <div class= "col-md-offset-1">
+                            <div class= "col-md-1">
                                 2.
                             </div>
                             <div class= "col-md-11"> 
@@ -134,96 +138,107 @@
                             </div>
                         </div>
                         
-                        <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question1 === null || vm.question1 === true}">
-                        <input
-                                type="radio"
-                                class="yes"
-                                name="optradio2"
-                                ng-disabled="vm.question1 === null"
-                                ng-click="vm.question2 = true ; vm.determineTrip()"
-                                ng-checked="vm.question2 === true">
-                                Yes
-                        </label>
-                        <label  class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question1 === null || vm.question1 === true}">
-                            <input
-                                type="radio"
-                                class="no"
-                                name="optradio2"
-                                ng-click="vm.question2 = false"
-                                ng-checked="vm.question2 === false"
-                                ng-disabled="vm.question1 === null">
-                                No
-                        </label>
+                        <div class = "row">
+                            <div class= "col-md-11 offset-md-1">
+                                <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question1 === null || vm.question1 === true}">
+                                <input
+                                        type="radio"
+                                        class="yes"
+                                        name="optradio2"
+                                        ng-click="vm.question2 = true ; vm.determineTrip()"
+                                        ng-checked="vm.question2 === true"
+                                        ng-disabled="vm.question1 === null || vm.question1 === true">
+                                        Yes
+                                </label>
+                                <label  class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question1 === null || vm.question1 === true}">
+                                    <input
+                                        type="radio"
+                                        class="no"
+                                        name="optradio2"
+                                        ng-click="vm.question2 = false"
+                                        ng-checked="vm.question2 === false"
+                                        ng-disabled="vm.question1 === null || vm.question1 === true">
+                                        No
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="travel-type-form-group">
                         <div class = "row">
-                            <div class= "col-md-offset-1" ng-if="vm.showOneWay">
+                            <div class= "col-md-1" ng-if="vm.showOneWay">
                                 3.
                             </div>
-                            <div class= "col-md-offset-1" ng-if="!vm.showOneWay">
+                            <div class= "col-md-1" ng-if="!vm.showOneWay">
                                 2.
                             </div>                                    
                             <div class= "col-md-11"> 
                                 Did you travel more than 35 miles (radius) away from your duty station?
                             </div>
                         </div>
-                        <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question2 === null || vm.question2 === true}">
-                            <input
-                                type="radio"
-                                class="yes"
-                                name="optradio3"
-                                ng-click="vm.question3 = true"
-                                ng-checked="vm.question3 === true"
-                                ng-disabled="vm.question2 === null">
-                                Yes
-                        </label>
-                        <label  class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question2 === null || vm.question2 === true}">
-                            <input
-                                type="radio"
-                                class="no"
-                                name="optradio3"
-                                ng-click="vm.question3 = false ; vm.determineTrip()"
-                                ng-checked="vm.question3 === false"
-                                ng-disabled="vm.question2 === null">
-                                No
-                        </label>
+                        <div class = "row">
+                            <div class= "col-md-11 offset-md-1"> 
+                                <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question2 === null || vm.question2 === true}">
+                                    <input
+                                        type="radio"
+                                        class="yes"
+                                        name="optradio3"
+                                        ng-click="vm.question3 = true"
+                                        ng-checked="vm.question3 === true"
+                                        ng-disabled="vm.question2 === null || vm.question2 === true">
+                                        Yes
+                                </label>
+                                <label  class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question2 === null || vm.question2 === true}">
+                                    <input
+                                        type="radio"
+                                        class="no"
+                                        name="optradio3"
+                                        ng-click="vm.question3 = false ; vm.determineTrip()"
+                                        ng-checked="vm.question3 === false"
+                                        ng-disabled="vm.question2 === null || vm.question2 === true">
+                                        No
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="travel-type-form-group">
                         <div class = "row">
-                            <div class= "col-md-offset-1" ng-if="vm.showOneWay">
+                            <div class= "col-md-1" ng-if="vm.showOneWay">
                                 4.
                             </div>
-                            <div class= "col-md-offset-1" ng-if="!vm.showOneWay">
+                            <div class= "col-md-1" ng-if="!vm.showOneWay">
                                 3.
                             </div>
                             <div class= "col-md-11"> 
                                   Are you combining trips into a single ESR (such as several trips during one week for mileage for parking)?
                             </div>
                         </div>
-                        <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question3 === null || vm.question3 === false}">
-                            <input
-                                type="radio"
-                                class="yes"
-                                name="optradio4"
-                                ng-click="vm.question4 = true ; vm.determineTrip()"
-                                ng-checked="vm.question4 === true"                                    
-                                ng-disabled="vm.question3 === null">
-                                Yes
-                        </label>
-                        <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question3 === null || vm.question3 === false}">
-                            <input
-                                type="radio"
-                                class="no"
-                                name="optradio4"
-                                ng-click="vm.question4 = false ; vm.determineTrip()"
-                                ng-checked="vm.question4 === false"
-                                ng-disabled="vm.question3 === null">
-                                No
-                        </label>
+                        <div class = "row">
+                            <div class= "col-md-11 offset-md-1">
+                                <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question3 === null || vm.question3 === false}">
+                                    <input
+                                        type="radio"
+                                        class="yes"
+                                        name="optradio4"
+                                        ng-click="vm.question4 = true ; vm.determineTrip()"
+                                        ng-checked="vm.question4 === true"                                    
+                                        ng-disabled="vm.question3 === null || vm.question3 === false">
+                                        Yes
+                                </label>
+                                <label class="travel-type-radio-inline" ng-class="{'travel-type-disabled-label': vm.question3 === null || vm.question3 === false}">
+                                    <input
+                                        type="radio"
+                                        class="no"
+                                        name="optradio4"
+                                        ng-click="vm.question4 = false ; vm.determineTrip()"
+                                        ng-checked="vm.question4 === false"
+                                        ng-disabled="vm.question3 === null || vm.question3 === false">
+                                        No
+                                </label>
+                            </div>
+                        </div>
                     </div>
+                </form>
                 </div>
-                    
-            </form>
             <div class="modal-footer travel-type-modal-footer">
                 
                     <div ng-if="vm.filterDataResult === 'round-trip'">Based on you answers, the trip type is: <strong>Round Trip</strong></div>
